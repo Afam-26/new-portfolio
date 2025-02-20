@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b9d44342e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>                
+                <h1>Afam Anekeh</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>DevOps Engineer | Software Engineer | System Admin</p>
+                <h1>Hi I'm <span>Afam</span> <br>from Austin TX</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ <!-- -------About-----> 
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ME.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I earned my undergrad in Public Administration in 2009, and I worked as a Sales Manager at a tire shop where I worked closely with upper management, met sales goals and lead a small team of sales associates. There, is where I gained my leadership skills and became a strong organizer and coordinator.
+                        After graduating from ACC with an Associate degree in LAN System Security and certificate in Network Admin, I joined Whole Foods Market as Sr. Service Desk Analyst. There, is where I improved my leadership skills with the ability to motivate and influence others to deliver best results. Proficiency at understanding, articulating and solving both complex and complicated problems                        
+                        Full Stack developer from University of Texas at Austin Full Stack Software Development Bootcamp. Recognized as an innovative problem solver passionate about developing apps, with a focus on mobile-first design and responsive. Proven ability to work collaboratively alongside peers to achieve company objectives. High performer looking to leverage complex problem solving skills and the ability to work effectively with diverse teams to drive organizational growth.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li> 
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>                    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>office</li> 
+                            <li><span>2019 - 2021</span><br>work place</li>
+                            <li><span>2017 - 2019</span><br>Chinek</li>                    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UT</li> 
+                            <li><span>2016</span><br>ACC</li>
+                            <li><span>2014</span><br>IMT</li>                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ------------services------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Film frisker is an application for movie lovers to sort, store, and discover their favorite and soon-to-be favorite films and shows. IT'S an MERN Application. (MONGO EXPRESS REACT NODE).
+                        All the folder structure is in MVC.This application is fully responsive as well.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Film frisker is an application for movie lovers to sort, store, and discover their favorite and soon-to-be favorite films and shows. IT'S an MERN Application. (MONGO EXPRESS REACT NODE).
+                        All the folder structure is in MVC.This application is fully responsive as well.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Film frisker is an application for movie lovers to sort, store, and discover their favorite and soon-to-be favorite films and shows. IT'S an MERN Application. (MONGO EXPRESS REACT NODE).
+                        All the folder structure is in MVC.This application is fully responsive as well.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cocktail.gif">
+                    <div class="layer">
+                        <h3>Cocktail-on-the-run</h3>
+                        <p>As a user, you can enter Cocktail Name
+
+                            And as a result, you get the Ingredients and Instructions shown on web-page with the nearest Bars.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/babar.gif">
+                    <div class="layer">
+                        <h3>Barber-Scheduler</h3>
+                        <p>These days, waiting in line at the barbershop isn’t really an option. With Barber Booker, you can now book your barber for a same-day fade without leaving your home. Here’s how it works. Your Barber Booker will show you which times your barber has available today. All you have to do is log in, pick a time, and show up to your cut.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/movie-friskers.gif">
+                    <div class="layer">
+                        <h3>film-frisker</h3>
+                        <p>Film frisker is an application for movie lovers to sort, store, and discover their favorite and soon-to-be favorite films and shows. IT'S an MERN Application. (MONGO EXPRESS REACT NODE).All the folder structure is in MVC.This application is fully responsive as well.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------contact---------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0806262222</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Full Stack PD.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Afam. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sideMeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sideMeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sideMeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzkitIlsJNm5mxvm8AvM8Rbw4BidneIP45_MBswE0Wdus5DRdh9BkyZIdJxgeaEA-JX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
