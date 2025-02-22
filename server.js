@@ -11,7 +11,7 @@ const http = require('http');
     const server = http.createServer((req, res) => {
 
         const filePath = './index.html'; // Path to your main HTML file
-
+        
 
 
         fs.readFile(filePath, (err, data) => {
