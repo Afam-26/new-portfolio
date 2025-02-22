@@ -12,12 +12,12 @@ html{
 body{
     background: #080808;
     color: #fff;
+    font-family: Play; 
 }
 
 #header{
     width: 100%;
-    height: 100vh;
-    /* background-image: url(images/ME.jpg); */
+    height: 100vh;    
     background-size: cover;
     background-position: center;
 }
@@ -71,16 +71,62 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 20%;
-    font-size: 30px;    
-    padding-left: 20%;
+    font-size: 80px;    
+    padding-left: 10%;   
 }
 
-.header-text h1{
-    font-size: 80px;
-    margin-top: 20px;
+.c1{
+    display: inline-block;
+}
+.c2{
+    display: inline-block;
+}
+.c3{
+    display: inline-block;
+}
+.c4{
+    display: inline-block;
 }
 
-.header-text h1 span{
+h1 .type{
+      font-size: 2.5rem;
+      overflow: hidden;
+      border-right: .15em solid #ff004f;
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 5s steps(25, end) forwards;
+}
+h1 .type2{
+      font-size: 2.5rem; 
+      overflow: hidden;
+      border-right: .15em solid #ff004f;
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 5s steps(25, end) forwards;
+      animation-delay: 6s;
+}
+h1 .type3{
+      font-size: 2.5rem; 
+      overflow: hidden;
+      border-right: .15em solid #ff004f; 
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 5s steps(25, end) forwards;
+      animation-delay: 11s;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+}
+
+h1 span{
     color: #ff004f;
 }
 
@@ -234,7 +280,7 @@ nav ul li a:hover::after{
     transform: transform 0.5s;
 }
 
-/* the below style can be removed to make My work text show below imag */
+
 .layer{
     width: 100%;
     height: 0;
@@ -253,8 +299,6 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
 }
-
-/* ends here */
 
 .layer h3{
     font-weight: 500;

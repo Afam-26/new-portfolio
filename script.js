@@ -1,5 +1,4 @@
-
-// About me section
+// Home page
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -19,13 +18,13 @@ function opentab(tabname){
 
 var sideMeu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sideMeu.style.right = "0";
-        }
+function openmenu(){
+        sideMeu.style.right = "0";
+    }
 
-        function closemenu(){
-            sideMeu.style.right = "-200px";
-        }
+function closemenu(){
+        sideMeu.style.right = "-200px";
+    }
 
 // Google spreadsheet
 
