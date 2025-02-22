@@ -23,7 +23,7 @@ body{
 }
 
 .container{
-    padding: 10px 10%;
+    padding: 20px 10%;
 }
 
 nav{
@@ -35,10 +35,6 @@ nav{
 
 nav h1{
     font-size: 100px;
-}
-
-.logo{
-    width: 140px;
 }
 
 nav ul li{
@@ -84,9 +80,6 @@ nav ul li a:hover::after{
 .c3{
     display: inline-block;
 }
-.c4{
-    display: inline-block;
-}
 
 h1 .type{
       font-size: 2.5rem;
@@ -123,7 +116,7 @@ h1 .type3{
 }
 @keyframes blink {
     from { border-color: transparent }
-    to { border-color: orange; }
+    to { border-color: #ff004f; }
 }
 
 h1 span{
