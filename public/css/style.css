@@ -423,13 +423,18 @@ nav .fa-solid{
     /* #header{
         background-image: url();
     } */
-    .header-text{
+    /* .header-text{
         margin-top: 100%;
         font-size: 16px;
-    }
-    .header-text h1{
+    } */
+    /* .header-text h1{
         font-size: 30px;
+    } */
+
+    nav h1{
+        font-size: 50px;
     }
+
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -457,6 +462,21 @@ nav .fa-solid{
         cursor: pointer;        
     }
 
+    .header-text{
+        margin-top: 40px;
+        font-size: 30px;         
+    }
+
+    .c1 .type{
+    font-size: 12px;
+    /* padding-right: 120px; */
+    }
+    .c2 .type2{
+    font-size: 12px;
+    }
+    .c3 .type3{
+    font-size: 12px;
+    }
     .sub-title{
         font-size: 40px;
     }
