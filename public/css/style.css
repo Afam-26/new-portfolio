@@ -452,11 +452,16 @@ nav .fa-solid{
     }
 
     h1.header-text{
-        margin-top: 100px;
+        margin-top: 150px;
         font-size: 30px;   
-        padding-right: 100px;    
+        padding-right: 100px;  
+        padding-bottom: 200px;  
     }
    
+   #about{
+    padding-top: -500px;
+    padding-bottom: 200px;
+   }
     .c1 .type{
     font-size: 15px;
     padding-right: 100px;
