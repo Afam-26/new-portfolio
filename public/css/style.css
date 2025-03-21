@@ -515,7 +515,7 @@ nav .fa-solid{
 
     /* New code */
 
-    /* nav ul {
+    nav ul {
         flex-direction: column;
         position: absolute;
         right: 0;
@@ -523,7 +523,7 @@ nav .fa-solid{
         width: 100%;
         background: #ff004f;
         text-align: center;
-        display: none; 
+        /* display: none;  */
     }
 
     nav ul.show {
@@ -539,7 +539,7 @@ nav .fa-solid{
         display: block;
         font-size: 25px;
         cursor: pointer;       
-    } */
+    }
 
 
 
