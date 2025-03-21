@@ -523,7 +523,7 @@ nav .fa-solid{
         width: 100%;
         background: #ff004f;
         text-align: center;
-        /* display: none;  */
+        display: none; 
     }
 
     nav ul.show {
@@ -568,7 +568,7 @@ nav .fa-solid{
         margin-top: 20%;
         font-size: 30px;
         text-align: center;
-        padding: 0 5%; /* Reduce side padding */
+        padding: 5% 5%; /* Reduce side padding */
     }
 
     .c1 .type,
