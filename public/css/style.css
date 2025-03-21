@@ -529,7 +529,7 @@ nav .fa-solid{
 
 
 
-    .header-text{
+    /* .header-text{
         margin-top: 150px;
         font-size: 10px;   
         padding-right: 100px;  
@@ -545,6 +545,23 @@ nav .fa-solid{
     }
     .c3 .type3{
         font-size: 15px;
+    } */
+
+
+    
+    /* New code */
+    .header-text {
+        margin-top: 20%;
+        font-size: 30px;
+        text-align: center;
+        padding: 0 5%; /* Reduce side padding */
+    }
+
+    .c1 .type,
+    .c2 .type2,
+    .c3 .type3 {
+        font-size: 18px; /* Scale down text */
+        text-align: center;
     }
    
    #about{
