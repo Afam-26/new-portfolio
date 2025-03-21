@@ -16,15 +16,25 @@ function opentab(tabname){
 
 // Side menu
 
-var sideMeu = document.getElementById("sidemenu");
+// var sideMeu = document.getElementById("sidemenu");
 
-function openmenu(){
-        sideMeu.style.right = "0";
-    }
+// function openmenu(){
+//         sideMeu.style.right = "0";
+// }
 
-function closemenu(){
-        sideMeu.style.right = "-200px";
-    }
+// function closemenu(){
+//         sideMeu.style.right = "-200px";
+// }
+
+
+/* New code */
+function openmenu() {
+    document.getElementById("sidemenu").classList.add("show");
+}
+
+function closemenu() {
+    document.getElementById("sidemenu").classList.remove("show");
+}
 
 // Google spreadsheet
 
