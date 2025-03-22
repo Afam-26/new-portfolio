@@ -460,9 +460,11 @@ form .btn2{
         top: 60px;
         right: 0;
         background: #080808;
-        width: 100%;
+        /* width: 100%; */
+        width: 40%; /* Reduce width */
+        height: auto; /* Adjust height */
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 0;        
     }
 
     .nav-links li {
