@@ -1,4 +1,4 @@
-// Home page
+// About Me page
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -13,7 +13,6 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-
 // Side menu
 
 // var sideMeu = document.getElementById("sidemenu");
@@ -27,10 +26,13 @@ function opentab(tabname){
 // }
 
 
+
 /* New code */
 function toggleMenu() {
-    document.getElementById("menu").classList.add("show");
+    document.getElementById("menu").classList.toggle("show");
+    
 }
+
 
 
 // Google spreadsheet

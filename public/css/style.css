@@ -501,9 +501,9 @@ form .btn2{
 }
 
 /* ----------------------css for small screens------------------ */
-/* nav .fa-solid{
+.nav-links .fa-solid{
     display: none;
-} */
+}
 
 @media only screen and (max-width: 768px){
     /* nav h1{
@@ -533,6 +533,9 @@ form .btn2{
         cursor: pointer;       
     } */
 
+
+
+    /* New code */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -564,8 +567,7 @@ form .btn2{
         display: flex;
     }
 
-
-      
+        
     /* New code */
     .header-text {
         margin-top: 20%;
