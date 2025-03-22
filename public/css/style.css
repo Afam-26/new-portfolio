@@ -495,14 +495,14 @@ form .btn2{
         margin-top: 20%;
         font-size: 30px;
         text-align: center;
-        padding: 0 5%; 
-        padding-left: 10%;
+        padding: 0 5%;       
     }
     .c1 .type,
     .c2 .type2,
     .c3 .type3 {
         font-size: 18px; 
         text-align: center;
+        padding-left: 5%;
     }
 
    #about{
