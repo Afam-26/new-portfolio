@@ -20,10 +20,10 @@ body{
     min-height: 100vh;    
     /* background-size: cover;
     background-position: center;   */
-    display: flex;
+    /* display: flex; */
    
     justify-content: center;
-    text-align: center;
+    text-align: center;    
 }
 
 
@@ -59,7 +59,7 @@ nav h1{
 /* New code */
 nav ul {
     display: flex;
-    gap: 20px; /* Space between menu items */
+    gap: 100px; /* Space between menu items */
     list-style: none;
 }
 
@@ -67,7 +67,7 @@ nav ul {
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 50px 50px;   
 }
 
 
@@ -81,7 +81,8 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 40px;
     position: relative;
 }
 
