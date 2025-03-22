@@ -28,6 +28,11 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 
+// To make the site return to the home page upon refresh
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
 // Google spreadsheet
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzkitIlsJNm5mxvm8AvM8Rbw4BidneIP45_MBswE0Wdus5DRdh9BkyZIdJxgeaEA-JX/exec'
