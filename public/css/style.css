@@ -485,9 +485,9 @@ form .btn2{
     }
 
 
-    #details {
+    /* #details {
         padding-left: 10%;
-    }
+    } */
 
         
     /* New code */
@@ -496,6 +496,7 @@ form .btn2{
         font-size: 30px;
         text-align: center;
         padding: 0 5%; 
+        padding-left: 10%;
     }
     .c1 .type,
     .c2 .type2,
