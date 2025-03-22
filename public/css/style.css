@@ -461,7 +461,7 @@ form .btn2{
         right: 0;
         background: #080808;
         /* width: 100%; */
-        width: 40%; /* Reduce width */
+        width: 50%; /* Reduce width */
         height: auto; /* Adjust height */
         text-align: center;
         padding: 10px 0;        
