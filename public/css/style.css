@@ -484,6 +484,11 @@ form .btn2{
         display: flex;
     }
 
+
+    #details {
+        padding-left: 5%;
+    }
+
         
     /* New code */
     .header-text {
