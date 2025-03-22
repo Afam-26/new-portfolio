@@ -460,9 +460,8 @@ form .btn2{
         top: 60px;
         right: 0;
         background: #080808;
-        /* width: 100%; */
-        width: 50%; /* Reduce width */
-        height: auto; /* Adjust height */
+        width: 40%; 
+        height: auto; 
         text-align: center;
         padding: 10px 0;        
     }
