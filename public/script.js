@@ -29,8 +29,8 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
 
 // To make the site return to the home page upon refresh
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+window.onload = function() {
+    window.location.href = "#header";
 };
 
 // Google spreadsheet
