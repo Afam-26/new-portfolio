@@ -13,26 +13,19 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-// Side menu
 
-// var sideMeu = document.getElementById("sidemenu");
-
-// function openmenu(){
-//         sideMeu.style.right = "0";
-// }
-
-// function closemenu(){
-//         sideMeu.style.right = "-200px";
-// }
-
-
-
-/* New code */
+/* Side memu */
 function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
+    document.getElementById("menu").classList.toggle("show");    
     
 }
 
+// Close the menu when a nav link is clicked
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("menu").classList.remove("show");        
+    });
+});
 
 
 // Google spreadsheet
