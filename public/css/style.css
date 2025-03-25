@@ -523,7 +523,7 @@ form .btn2{
 
 
     /* About section */
-   /* #about{
+   #about{
     padding-top: -500px;
     padding-bottom: 200px;    
    }    
@@ -542,36 +542,36 @@ form .btn2{
     .tab-links{
         font-size: 15px;
         margin-right: 20px;
-    } */
+    }
 
-    #about {
-        padding: 50px 0; /* Reduce padding for better fit */
+    /* #about {
+        padding: 50px 0; 
         text-align: center;
     }
 
     .row {
-        flex-direction: column; /* Stack columns on small screens */
+        flex-direction: column; 
     }
 
     .about-col-1, .about-col-2 {
-        flex-basis: 100%; /* Make each section take full width */
+        flex-basis: 100%; 
     }
 
     .about-col-1 img {
-        width: 80%; /* Resize image to fit smaller screens */
+        width: 80%; 
         margin: auto;
         display: block;
     }
 
     .sub-title {
-        font-size: 30px; /* Reduce heading size */
-    }
+        font-size: 30px; 
+    } */
 
 
     /* Services Section */
 
-    .services-list {
-        grid-template-columns: 1fr; /* Make services stack */
+    /* .services-list {
+        grid-template-columns: 1fr; 
         gap: 20px;
     }
 
@@ -582,12 +582,12 @@ form .btn2{
 
     .services-list div h2 {
         font-size: 24px;
-    }
+    } */
     
 
     /* Portfolio Seciton */
-    .work-list {
-        grid-template-columns: 1fr; /* Stack portfolio items */
+    /* .work-list {
+        grid-template-columns: 1fr; 
         gap: 20px;
     }
 
@@ -603,20 +603,20 @@ form .btn2{
 
     .layer h3 {
         font-size: 18px;
-    }
+    } */
 
     /* Contact Section */
 
-    /* .contact-left, .contact-right{
+    .contact-left, .contact-right{
         flex-basis: 100%;
     }
 
     .copyright{
         font-size: 14px;
-    } */
+    }
 
 
-    .contact-left, .contact-right {
+    /* .contact-left, .contact-right {
         flex-basis: 100%;
         text-align: center;
     }
@@ -634,7 +634,7 @@ form .btn2{
         width: 100%;
         font-size: 16px;
         padding: 10px;
-    }
+    } */
 
 }
 
