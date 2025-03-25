@@ -468,6 +468,10 @@ form .btn2{
         padding: 20px 5%;
     } */
 
+    .container {
+        padding: 0 10%; /* Reduce default padding */
+    }
+
 
      /* Nav Bar section */
     .nav-links {
