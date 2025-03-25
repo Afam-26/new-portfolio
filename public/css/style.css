@@ -508,10 +508,11 @@ form .btn2{
 
 
     /* Home section */
-    
+
     #header {
         margin-bottom: 0;
         padding-bottom: 0;
+        margin-top: -20px;
     }
 
     #details {
