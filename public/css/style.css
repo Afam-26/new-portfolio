@@ -15,14 +15,6 @@ body{
     font-family: Play; 
 }
 
-
-#header{
-    width: 100%;
-    min-height: 100vh;   
-    display: flex;   
-    justify-content: center;
-    text-align: center;    
-}
 .container{
     padding: 20px 10%;
 }
@@ -94,6 +86,13 @@ body{
 
 
 /* Header-test section */
+#header{
+    width: 100%;
+    min-height: 100vh;   
+    display: flex;   
+    justify-content: center;
+    text-align: center;    
+}
 
 #details {
     padding-top: 10%;
@@ -457,16 +456,7 @@ form .btn2{
 /* ----------------------css for small screens------------------ */
 
 
-@media only screen and (max-width: 768px){
-
-    /* body {
-        font-size: 16px; 
-    }
-
-    .container {
-        width: 90%; 
-        padding: 20px 5%;
-    } */
+@media only screen and (max-width: 768px){   
 
     .container {
         padding: 0 10%; /* Reduce default padding */
@@ -506,48 +496,63 @@ form .btn2{
         display: flex;
     }
 
-
-    /* Home section */
-
-    /* #header {
-        margin-bottom: 0;
-        padding-bottom: 0;        
-    }
+    /* Home section */    
 
     #details {
-        padding-left: 20%;
-        margin-bottom: 0;
-        padding-bottom: 20px;
-    }       
-
-    .header-text {        
-        margin-bottom: 0;
-        font-size: 30px;
-        text-align: center;
-        padding: 0 5%;       
-    }
-    .c1 .type,
-    .c2 .type2,
-    .c3 .type3 {
-        font-size: 18px; 
-        text-align: center;        
-    } */
-
-    #details {
-        text-align: center; /* Center text for better mobile view */
-        padding: 20px 5%; /* Adjust padding for small screens */
+        width: 100%; /* Ensure it fits within the screen */
+        max-width: 90%; /* Prevent overflow */
+        margin: 0 auto; /* Center it */
+        padding: 20px 5%; /* Adjust padding */
+        text-align: center; /* Center text */
+        overflow: hidden; /* Prevent content from breaking layout */
     }
 
     .header-text {
-        font-size: 30px; /* Reduce font size */
+        font-size: 24px; /* Scale down text */
         line-height: 1.5; /* Improve readability */
-        margin-top: 50px; /* Adjust spacing from top */
+        word-wrap: break-word; /* Prevent long words from breaking layout */
     }
 
     .c1, .c2, .c3 {
-        display: block; /* Stack text elements */
+        display: block; /* Stack them */
+        width: 100%; /* Ensure full width */
+        max-width: 90%; /* Prevent overflow */
+        margin: 10px auto; /* Center them */
+        text-align: center; /* Align text */
+        overflow: hidden; /* Prevent animation from cutting off */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .c1 .type, .c2 .type2, .c3 .type3 {
         font-size: 18px; /* Adjust text size */
-        margin-top: 10px; /* Add spacing */
+        overflow: hidden;
+        border-right: 2px solid #ff004f;
+        white-space: nowrap;
+        width: 0;
+        display: inline-block;
+        animation: typing 5s steps(25, end) forwards, blink 0.75s step-end infinite;
+    }
+
+     /* Delay animation for each section */
+     .c1 .type {
+        animation-delay: 0s;
+    }
+
+    .c2 .type2 {
+        animation-delay: 6s; /* Start after .c1 finishes */
+    }
+
+    .c3 .type3 {
+        animation-delay: 12s; /* Start after .c2 finishes */
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    @keyframes blink {
+        50% { border-color: transparent; }
     }
 
     /* About section */
