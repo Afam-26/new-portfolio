@@ -506,6 +506,8 @@ form .btn2{
     /* Home section */
     #details {
         padding-left: 20%;
+        margin-bottom: 0;
+        padding-bottom: 20px;
     }       
 
     .header-text {
@@ -525,8 +527,10 @@ form .btn2{
     /* About section */
    #about{
     /* padding-top: -500px;
-    padding-bottom: 200px;     */
-    padding: 50px 0; 
+    padding-bottom: 200px;    
+    padding: 50px 0;  */
+    margin-top: -20px; /* Reduce space between sections */
+    padding-top: 50px;
    }    
     .sub-title{
         font-size: 40px;
