@@ -521,7 +521,7 @@ form .btn2{
     }       
 
     .header-text {        
-        margin-bottom: 50;
+        margin-bottom: 0;
         font-size: 30px;
         text-align: center;
         padding: 0 5%;       
@@ -539,7 +539,7 @@ form .btn2{
     /* padding-top: -500px;
     padding-bottom: 200px;    
     padding: 50px 0;  */
-    margin-top: -20px; /* Reduce space between sections */
+    margin-top: -50px; /* Reduce space between sections */
     padding-top: 50px;
    }    
     .sub-title{
@@ -552,7 +552,7 @@ form .btn2{
         margin-bottom: 30px;
     }
     .about-col-2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .tab-links{
         font-size: 15px;
