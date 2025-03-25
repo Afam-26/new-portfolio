@@ -535,11 +535,8 @@ form .btn2{
 
 
     /* About section */
-   #about{
-    /* padding-top: -500px;
-    padding-bottom: 200px;    
-    padding: 50px 0;  */
-    margin-top: -250px; /* Reduce space between sections */
+   #about{    
+    margin-top: -250px; 
     padding-top: 50px;
    }    
     .sub-title{
@@ -563,67 +560,6 @@ form .btn2{
         font-size: 25px;
     }
 
-    /* #about {
-        padding: 50px 0; 
-        text-align: center;
-    }
-
-    .row {
-        flex-direction: column; 
-    }
-
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%; 
-    }
-
-    .about-col-1 img {
-        width: 80%; 
-        margin: auto;
-        display: block;
-    }
-
-    .sub-title {
-        font-size: 30px; 
-    } */
-
-
-    /* Services Section */
-
-    /* .services-list {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-    }
-
-    .services-list div {
-        padding: 20px;
-        font-size: 14px;
-    }
-
-    .services-list div h2 {
-        font-size: 24px;
-    } */
-    
-
-    /* Portfolio Seciton */
-    /* .work-list {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-    }
-
-    .work img {
-        width: 100%;
-        height: auto;
-    }
-
-    .layer {
-        padding: 20px;
-        font-size: 12px;
-    }
-
-    .layer h3 {
-        font-size: 18px;
-    } */
-
     /* Contact Section */
 
     .contact-left, .contact-right{
@@ -632,28 +568,7 @@ form .btn2{
 
     .copyright{
         font-size: 14px;
-    }
-
-
-    /* .contact-left, .contact-right {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .contact-left p {
-        font-size: 16px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-    }
-
-    form input, form textarea {
-        width: 100%;
-        font-size: 16px;
-        padding: 10px;
-    } */
+    }    
 
 }
 
