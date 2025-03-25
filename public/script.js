@@ -35,19 +35,59 @@ window.onload = function() {
 
 // Google spreadsheet
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzkitIlsJNm5mxvm8AvM8Rbw4BidneIP45_MBswE0Wdus5DRdh9BkyZIdJxgeaEA-JX/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbzkitIlsJNm5mxvm8AvM8Rbw4BidneIP45_MBswE0Wdus5DRdh9BkyZIdJxgeaEA-JX/exec'
+// const form = document.forms['submit-to-google-sheet']
+// const msg = document.getElementById("msg")
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },5000)
-        form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-})
+// form.addEventListener('submit', e => {
+//   e.preventDefault()
+//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//     .then(response => {
+//         msg.innerHTML = "Message sent successfully"
+//         setTimeout(function(){
+//             msg.innerHTML = ""
+//         },5000)
+//         form.reset()
+//     })
+//     .catch(error => console.error('Error!', error.message))
+// })
+
+
+// Formspree submission
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='submit-to-google-sheet']");
+    const msg = document.getElementById("msg");    
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const formData = new FormData(form);
+
+        // Send form data to Formspree
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                Accept: "application/json",
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                msg.innerHTML = "Message sent successfully!";
+                form.reset(); // Clear form inputs
+            } else {
+                msg.innerHTML = "Error sending message. Try again.";
+            }
+
+            // Hide message after 3 seconds
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 3000);
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            msg.innerHTML = "Something went wrong. Please try again.";
+        });
+    });
+});
