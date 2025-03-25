@@ -505,6 +505,8 @@ form .btn2{
         padding: 20px 5%; /* Adjust padding */
         text-align: center; /* Center text */
         overflow: hidden; /* Prevent content from breaking layout */
+        margin-top: 80px; /* Adjust based on navbar height */
+        padding-top: 20px;
     }
 
     .header-text {
