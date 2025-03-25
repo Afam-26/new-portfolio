@@ -520,15 +520,16 @@ form .btn2{
         margin: 10px auto; /* Center them */
         text-align: center; /* Align text */
         overflow: hidden; /* Prevent animation from cutting off */
+        word-wrap: break-word; /* Ensure text wraps correctly */
         white-space: nowrap; /* Prevent text wrapping */
     }
 
     .c1 .type, .c2 .type2, .c3 .type3 {
-        font-size: 18px; /* Adjust text size */
+        font-size: 16px; /* Adjust text size */
         overflow: hidden;
         border-right: 2px solid #ff004f;
-        white-space: nowrap;
-        width: 0;
+        white-space: normal;
+        width: 100;
         display: inline-block;
         animation: typing 5s steps(25, end) forwards, blink 0.75s step-end infinite;
     }
