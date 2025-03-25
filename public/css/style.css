@@ -515,14 +515,13 @@ form .btn2{
     }
 
     #details {
-        /* padding-left: 20%; */
+        padding-left: 20%;
         margin-bottom: 0;
         padding-bottom: 20px;
     }       
 
-    .header-text {
-        margin-top: -20%;
-        margin-bottom: 0;
+    .header-text {        
+        margin-bottom: 10;
         font-size: 30px;
         text-align: center;
         padding: 0 5%;       
