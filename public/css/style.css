@@ -509,7 +509,7 @@ form .btn2{
 
     /* Home section */
 
-    #header {
+    /* #header {
         margin-bottom: 0;
         padding-bottom: 0;        
     }
@@ -531,8 +531,24 @@ form .btn2{
     .c3 .type3 {
         font-size: 18px; 
         text-align: center;        
+    } */
+
+    #details {
+        text-align: center; /* Center text for better mobile view */
+        padding: 20px 5%; /* Adjust padding for small screens */
     }
 
+    .header-text {
+        font-size: 30px; /* Reduce font size */
+        line-height: 1.5; /* Improve readability */
+        margin-top: 50px; /* Adjust spacing from top */
+    }
+
+    .c1, .c2, .c3 {
+        display: block; /* Stack text elements */
+        font-size: 18px; /* Adjust text size */
+        margin-top: 10px; /* Add spacing */
+    }
 
     /* About section */
    #about{    
