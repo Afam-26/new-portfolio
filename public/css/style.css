@@ -435,6 +435,12 @@ form .btn2{
     cursor: pointer;
 }
 
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -452,7 +458,18 @@ form .btn2{
 
 
 @media only screen and (max-width: 768px){
-     /* New code */
+
+    body {
+        font-size: 16px; /* Reduce text size for readability */
+    }
+
+    .container {
+        width: 90%; /* Ensure content fits within the screen */
+        padding: 20px 5%;
+    }
+
+
+     /* Nav Bar section */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -486,12 +503,11 @@ form .btn2{
     }
 
 
+    /* Home section */
     #details {
         padding-left: 20%;
-    }
+    }       
 
-        
-    /* New code */
     .header-text {
         margin-top: 20%;
         font-size: 30px;
@@ -505,11 +521,12 @@ form .btn2{
         text-align: center;        
     }
 
-   #about{
+
+    /* About section */
+   /* #about{
     padding-top: -500px;
     padding-bottom: 200px;    
-   }
-    
+   }    
     .sub-title{
         font-size: 40px;
     }
@@ -522,23 +539,102 @@ form .btn2{
     .about-col-2{
         font-size: 14px;
     }
-
     .tab-links{
         font-size: 15px;
         margin-right: 20px;
+    } */
+
+    #about {
+        padding: 50px 0; /* Reduce padding for better fit */
+        text-align: center;
     }
 
-    .contact-left, .contact-right{
+    .row {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Make each section take full width */
+    }
+
+    .about-col-1 img {
+        width: 80%; /* Resize image to fit smaller screens */
+        margin: auto;
+        display: block;
+    }
+
+    .sub-title {
+        font-size: 30px; /* Reduce heading size */
+    }
+
+
+    /* Services Section */
+
+    .services-list {
+        grid-template-columns: 1fr; /* Make services stack */
+        gap: 20px;
+    }
+
+    .services-list div {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .services-list div h2 {
+        font-size: 24px;
+    }
+    
+
+    /* Portfolio Seciton */
+    .work-list {
+        grid-template-columns: 1fr; /* Stack portfolio items */
+        gap: 20px;
+    }
+
+    .work img {
+        width: 100%;
+        height: auto;
+    }
+
+    .layer {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .layer h3 {
+        font-size: 18px;
+    }
+
+    /* Contact Section */
+
+    /* .contact-left, .contact-right{
         flex-basis: 100%;
     }
 
     .copyright{
         font-size: 14px;
+    } */
+
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        text-align: center;
     }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
 }
 
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
