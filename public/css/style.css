@@ -542,10 +542,10 @@ form .btn2{
     .c1 .type::after, .c2 .type2::after, .c3 .type3::after {
         content: "|";
         position: absolute;
-        right: 0;
-        /* animation: blink 0.75s step-end infinite; */
+        right: 0;        
         font-size: 16px;
         color: #ff004f;
+        animation: blink 0.75s step-end infinite, hideCursor 0s linear 5s forwards;
     }
 
     /* Ensure text wraps after typing animation completes */
@@ -569,6 +569,14 @@ form .btn2{
     @keyframes blink {
         50% { opacity: 0; }
     }
+
+     /* Hides Cursor After Typing */
+     @keyframes hideCursor {
+        to { opacity: 0; }
+    }
+
+
+
 
     /* About section */
    #about{    
