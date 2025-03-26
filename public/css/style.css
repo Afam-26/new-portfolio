@@ -500,7 +500,7 @@ form .btn2{
 
     #details {
         width: 100%; /* Ensure it fits within the screen */
-        max-width: 90%; /* Prevent overflow */
+        max-width: 100%; /* Prevent overflow */
         margin: 0 auto; /* Center it */
         padding: 20px 5%; /* Adjust padding */
         text-align: center; /* Center text */
@@ -518,20 +518,22 @@ form .btn2{
     .c1, .c2, .c3 {
         display: block; /* Stack them */
         width: 100%; /* Ensure full width */
-        max-width: 90%; /* Prevent overflow */
+        max-width: 100%; /* Prevent overflow */
+        /* max-width: 90%; */
         margin: 10px auto; /* Center them */
         text-align: center; /* Align text */
         overflow: hidden; /* Prevent animation from cutting off */
         word-wrap: break-word; /* Ensure text wraps correctly */
-        white-space: nowrap; /* Prevent text wrapping */
+        white-space: nowrap; /* Prevent text wrapping */        
     }
 
     .c1 .type, .c2 .type2, .c3 .type3 {
         font-size: 16px; /* Adjust text size */
         overflow: hidden;
-        border-right: 2px solid #ff004f;
-        white-space: normal;
-        width: 100;
+        border-right: 2px solid #ff004f;        
+        /* white-space: normal; */
+        /* white-space: nowrap; */
+        width: 100;            
         display: inline-block;
         animation: typing 5s steps(25, end) forwards, blink 0.75s step-end infinite;
     }
@@ -551,11 +553,11 @@ form .btn2{
     
     @keyframes typing {
         from { width: 0; }
-        to { width: 100%; }
+        to { width: 100%; }       
     }
 
     @keyframes blink {
-        50% { border-color: transparent; }
+        50% { border-color: transparent; }       
     }
 
     /* About section */
