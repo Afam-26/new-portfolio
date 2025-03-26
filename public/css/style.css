@@ -500,7 +500,7 @@ form .btn2{
 
     #details {
         width: 100%; /* Ensure it fits within the screen */
-        max-width: 100%; /* Prevent overflow */
+        max-width: 90%; /* Prevent overflow */
         margin: 0 auto; /* Center it */
         padding: 20px 5%; /* Adjust padding */
         text-align: center; /* Center text */
