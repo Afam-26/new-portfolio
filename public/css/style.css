@@ -516,48 +516,58 @@ form .btn2{
     }
 
     .c1, .c2, .c3 {
-        display: block; /* Stack them */
-        width: 100%; /* Ensure full width */
-        max-width: 100%; /* Prevent overflow */
-        /* max-width: 90%; */
-        margin: 10px auto; /* Center them */
-        text-align: center; /* Align text */
-        overflow: hidden; /* Prevent animation from cutting off */
-        word-wrap: break-word; /* Ensure text wraps correctly */
-        white-space: nowrap; /* Prevent text wrapping */        
+        display: block;
+        width: 100%;
+        max-width: 90%;
+        margin: 5px auto;
+        text-align: center;
+        overflow: hidden; /* Prevents cut-off */
+        word-wrap: break-word; /* Ensures words fit properly */
     }
 
     .c1 .type, .c2 .type2, .c3 .type3 {
-        font-size: 16px; /* Adjust text size */
-        overflow: hidden;
-        border-right: 2px solid #ff004f;        
-        /* white-space: normal; */
-        /* white-space: nowrap; */
-        width: 100;            
+        font-size: 16px;
         display: inline-block;
-        animation: typing 5s steps(25, end) forwards, blink 0.75s step-end infinite;
+        overflow: hidden;
+        white-space: nowrap; /* Keep text in one line during typing */
+        max-width: 100%;
+        word-break: break-word; /* Allow wrapping after animation */
+        position: relative;
+        padding-right: 5px;
+        border-right: none; /* Remove big cursor */
+        animation: typing 5s steps(25, end) forwards, shrink-wrap 1s linear 5s forwards;
     }
 
-     /* Delay animation for each section */
-     .c1 .type {
-        animation-delay: 0s;
+    /* Blinking Cursor - Only One Small Cursor */
+    .c1 .type::after, .c2 .type2::after, .c3 .type3::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        /* animation: blink 0.75s step-end infinite; */
+        font-size: 16px;
+        color: #ff004f;
     }
 
-    .c2 .type2 {
-        animation-delay: 6s; /* Start after .c1 finishes */
+    /* Ensure text wraps after typing animation completes */
+    @keyframes shrink-wrap {
+        from { white-space: nowrap; }
+        to { white-space: normal; }
     }
 
-    .c3 .type3 {
-        animation-delay: 12s; /* Start after .c2 finishes */
-    }
-    
+     /* Animation Delays */
+     /* .c1 .type { animation-delay: 0s; }
+     .c2 .type2 { animation-delay: 5s; }
+     .c3 .type3 { animation-delay: 10s; } */
+
+    /* Typing Animation */
     @keyframes typing {
         from { width: 0; }
-        to { width: 100%; }       
+        to { width: 100%; }
     }
 
+    /* Blinking Cursor */
     @keyframes blink {
-        50% { border-color: transparent; }       
+        50% { opacity: 0; }
     }
 
     /* About section */
